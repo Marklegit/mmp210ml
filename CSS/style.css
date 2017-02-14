@@ -1,0 +1,35 @@
+h1{
+    color: crimson;
+}
+h2{
+    color:white;
+}
+p{
+    font-weight: 500;
+}
+.intro{
+    font-size: 1.5em;
+}
+body{
+    background-color: black;
+}
+p {
+    color: white;
+}
+.part2{
+    width:45%;
+    float:left;   
+}
+a {
+    color: red;
+}
+a:hover{
+    color:greenyellow;
+    transition: color 1s ease-in-out;
+}
+
+nav li{
+    display:inline-block;
+    list-styles-types:none;
+    margin-right: 20px;
+}
