@@ -1,35 +1,57 @@
-h1{
-    color: crimson;
-}
-h2{
-    color:white;
-}
-p{
-    font-weight: 500;
-}
-.intro{
-    font-size: 1.5em;
-}
 body{
-    background-color: black;
+    font-family:helvetica;
 }
-p {
-    color: white;
+h1{
+background-image: url(http://www.publicdomainpictures.net/pictures/150000/velka/banner-header-tapete-1450024026hsQ.jpg);
+color:lightgoldenrodyellow;
+font-size: 100px;
+-webkit-text-stroke: 4px black;
+text-align: center;
+margin-top: 120px;
 }
-.part2{
-    width:45%;
-    float:left;   
-}
-a {
-    color: red;
-}
-a:hover{
-    color:greenyellow;
-    transition: color 1s ease-in-out;
+h2 {
+    text-align: center;
+    font-size: 100px;
 }
 
-nav li{
-    display:inline-block;
-    list-styles-types:none;
-    margin-right: 20px;
+ul {
+    list-style-type: none;
+    margin-top: 0px;
+    padding: 0;
+    overflow: hidden;
+  background-image: url(https://hairbyslice78.files.wordpress.com/2014/04/20140421-205155.jp);
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
+li {
+    float: left;
+    font-size: 30px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 28px 30px;
+    text-decoration: none;
+    border: 1px solid
+        
+}
+
+li a:hover:not(.active) {
+    background-color: crimson;
+}
+
+.active {
+    background-color:green;
+}
+img {
+    border: 2px solid;
+    padding: -20px;
+    margin-left: 10px
+;
+}
+
