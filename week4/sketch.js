@@ -5,8 +5,6 @@ function draw() {
  
     
   background('#222222');
-/*cursor horizontal line*/    
- line(width/2, 0, width/2, height);
   if (mouseX < 500) {
     cursor(CROSS);
   } else {
@@ -16,7 +14,7 @@ function draw() {
     
     
   strokeWeight(4);
-  fill(55, 190, 10 + sin(frameCount*0.1) *  255, 255, 255);
+  fill(55, 190, 10 + sin(frameCount*0.1) *  255, 255, 255); 
   if (mouseIsPressed) {
     stroke(255);
   }
@@ -26,24 +24,16 @@ function draw() {
   textSize(40)
   text("TRIFORCE", 400, 470);
 
+var top = 600;
+var bottom= 400;   
 
-    
-var c = color('yellow');
-fill(c);
-strokeWeight(4);
-stroke(255, 255, 255);
-if (mouseIsPressed)
-triangle(10, 60, 30, 40, 50, 60);
+triangle(100, 600, 300, bottom, 500, top);
 
-else
-triangle(100, 600, 300, 400, 500, 600);
-
-triangle(500, 600, 700, 400, 900, 600);
-triangle(300, 400,  500, 200, 700, 400);
+triangle(500, top, 700, bottom, 900, top);
+triangle(300, bottom,  500, 200, 700, bottom);
 
  
-var c = color('Green');
-fill(c);
+fill('Green');
 textSize(50)    
 text("Mark G", 450, 700);
     
