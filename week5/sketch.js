@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-    background(0);
+    background('darkgreen');
     
     var windowWidth = width/6; // window width
     var windowHeight = height/2; // window height
@@ -13,29 +13,33 @@ function draw() {
     for ( var x = windowWidth/4; x < width; x+=windowWidth) {
        for (var y = windowHeight/4; y < height; y+=windowHeight) {
            
-           fill("orange");
+           fill("grey");
            rect(x, y, windowWidth/2, windowHeight/2);
            
            fill("yellow");
-        
-      
+           stroke(167, 22, 54);
+           
+           rect(x, y, windowWidth/4, windowHeight/8);
+           
+           rect(x, y, windowWidth/2, windowHeight/8);
+           
            rect(x, y + windowHeight/8, windowWidth/4, windowHeight/8);
+           
            rect(x + windowWidth/4, y + windowHeight/8, windowWidth/4, windowHeight/8);
-         
-           fill("orange");
-           triangle(500, 320, 40, 625, 960, 626);
+           
         
+           
+           fill("brown");
+           
+           rect(x, y, windowWidth/2, windowHeight/16);
+           
+           rect(x, y, windowWidth/16, windowHeight/2);
+           
            fill("red");
-           triangle(500, 420, 40, 625, 960, 626);
            
-             fill("yellow");
-           triangle(500, 520, 40, 625, 960, 626);
+           rect(x, y * 2, windowWidth/2, windowHeight/16);
            
-           fill("orange");
-           rect(40, 20, 920, 100);
-           
-           fill("black");
-           rect(120, 30, 720, 70);
+         
         }
     }
         
