@@ -5,8 +5,6 @@ function draw() {
  
     
   background('#222222');
-/*cursor horizontal line*/    
- line(width/2, 0, width/2, height);
   if (mouseX < 500) {
     cursor(CROSS);
   } else {
@@ -16,7 +14,7 @@ function draw() {
     
     
   strokeWeight(4);
-  fill(55, 190, 10 + sin(frameCount*0.1) *  255, 255, 255);
+  fill(55, 190, 10 + sin(frameCount*0.1) *  200, 255); 
   if (mouseIsPressed) {
     stroke(255);
   }
@@ -26,26 +24,21 @@ function draw() {
   textSize(40)
   text("TRIFORCE", 400, 470);
 
-
+var sevhun = 700;
+var top = 600;
+var fihun = 500;
+var bottom= 400;   
+var thrhun = 300; 
     
-var c = color('yellow');
-fill(c);
-strokeWeight(4);
-stroke(255, 255, 255);
-if (mouseIsPressed)
-triangle(10, 60, 30, 40, 50, 60);
+triangle(100, top, thrhun, bottom, fihun, top);
 
-else
-triangle(100, 600, 300, 400, 500, 600);
-
-triangle(500, 600, 700, 400, 900, 600);
-triangle(300, 400,  500, 200, 700, 400);
+triangle(fihun, top, sevhun, bottom, 900, top);
+triangle(thrhun, bottom,  fihun, 200, sevhun, bottom);
 
  
-var c = color('Green');
-fill(c);
+fill('Green');
 textSize(50)    
-text("Mark G", 450, 700);
+text("Mark G", 450, sevhun);
     
 
 }
