@@ -89,8 +89,8 @@ frameRate(1.2);
     stroke('black');
   
             
-            
-    var p2 ="It's supposed to be\nan ad for the library\nsection of Horror Fiction.\nI used random color values\non a For loop.The text \nhas random colors too.\nThe stroke on the text has\nframe count. Rect, Arc, and \nEllipse Shapes were used.";
+       strokeWeight(4);     
+    var p2 ="It's supposed to be\nan ad for the library\nsection of Horror Fiction.\nI used random color values\non a For loop.The text \nhas random colors too.\nThe stroke on the text has a\nframe count. Rect, Arc, and \nEllipse shapes were used.";
   
 text(p2, 10, 200); 
         }
@@ -121,7 +121,7 @@ textFont("Helvetica");
   noFill();
   stroke(255);
   strokeWeight(4 + (frameCount % 16));
-  (frameCount % 400, 200, 100, 100);
+ 
     
     
 }
